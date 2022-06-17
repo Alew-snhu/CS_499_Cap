@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhancement two</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/enhancement.css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet'>
+</head>
+<body>
+    <ul class="navul">
+        <li class="navli"><a href="./frontpage.html">Home</a></li>
+        <li class="navli"><a href="./psa.html">Professional Self-Assessment</a></li>
+        <li class="navli"><a href="./codereview.html">Code Review</a></li>         
+        <li class="navli"><a href="./enhancement1.html">Enhancement One</a></li>
+        <li class="navli"><a href="./enhancement2.html">Enhancement Two</a></li>        
+        <li class="navli"><a href="./enhancement3.html">Enhancement Three</a></li>
+    </ul>
+    <h1 class="header">Enhancement Two: Algorithms And Data Structures</h1>
+    <div class="container">
+        <div class="leftcontent">  
+            <h1><a href="https://github.com/Alew-snhu/CS_499_Cap" target="_blank">View The Completed Project Here On GitHub</a></h1>          
+            <h3>Three Functions Created To Work With The UI</h3>
+            <div style="text-align:center">
+                <a target="_blank" href="../images/Code1.png">
+                    <img src="../images/Code1.png" alt="Code1">
+                </a>
+                <a target="_blank" href="../images/Code2.png">
+                    <img src="../images/Code2.png" alt="Code2">
+                </a>
+                <a target="_blank" href="../images/Code3.png">
+                    <img src="../images/Code3.png" alt="Code3">
+                </a>
+                <a target="_blank" href="../images/Code4.png">
+                    <img src="../images/Code4.png" alt="Code4">
+                </a>
+            </div>
+            <h3>Three Functions Tested And Passing</h3>
+            <div style="text-align:center">
+                <a target="_blank" href="../images/Test1.png">
+                    <img src="../images/Test1.png" alt="Test1">
+                </a>
+                <a target="_blank" href="../images/Test2.png">
+                    <img src="../images/Test2.png" alt="Test2">
+                </a>
+                <a target="_blank" href="../images/Test3.png">
+                    <img src="../images/Test3.png" alt="Test3">
+                </a>
+                <a target="_blank" href="../images/Test4.png">
+                    <img src="../images/Test4.png" alt="Test4">
+                </a>
+            </div>
+            <h3>Seperating Logic From UI With MVVM</h3>
+            <div style="text-align:center">
+                <a target="_blank" href="../images/MVVM1.png">
+                    <img src="../images/MVVM1.png" alt="MVVM1">
+                </a>
+                <a target="_blank" href="../images/MVVM2.png">
+                    <img src="../images/MVVM2.png" alt="MVVM2">
+                </a>
+                <a target="_blank" href="../images/MVVM3.png">
+                    <img src="../images/MVVM3.png" alt="MVVM3">
+                </a>                
+            </div>                        
+        </div>        
+        <div class="rightcontent">
+                        
+            <div class="para">
+                <span style="font-weight:bolder">Enhancements Completed:</span><br>
+                <ul>
+                    <li>Translated old Java code into C#.</li>                    
+                    <li>Altered the algorithms to use lists and dictionaries as data structures.</li>
+                    <li>Created a test project within the code solution to implement unit tests on view models.</li>
+                    <li>Organized and refactored the code to implement MVVM architectural pattern.</li>
+                    
+                </ul>                
+            </div>
+            <p class="para">
+                <span style="font-weight:bolder">Artifact Description:</span><br>
+                In week two of enhancements, I continued improving the Animal Monitoring System. 
+                It was time to add some data structures and algorithms to give this program some
+                functionality.
+            </p>
+            <p class ="para">
+                <span style="font-weight:bolder">Justification of inclusion:</span><br>
+                For week two, the initial plan was to convert the old java code into C#, take 
+                the data collected from the algorithms and display it to the UI. This would 
+                involve altering how I constructed the old java code and adding a few more steps 
+                to get the data to display in the UI. I had to take a closer look and refresh 
+                my memory on how this old code worked.<br><br>
+
+                In the first step of this process, I display my skills in analyzing how code works 
+                and creating modifications to fit a specific purpose. Within the program, there are 
+                two functions to return the animal type and the description of the animal and store 
+                it in an array. I decided to hold each data set within two different C# lists. I would 
+                essentially take the two lists, utilize LINQ's .zip method to turn one list into 
+                dictionary keys, and the other list into dictionary values, and use this dictionary to 
+                provide functionality between a combo box and a list box in the UI. The functions 
+                and the intended outcome can be seen in row one of the photos provided on the left 
+                side of the page.<br><br>
+
+                Another highlight of my skills in this week's enhancements would be the addition of 
+                a test project within my solution. I created the test project to implement unit tests 
+                on the view models. Passing tests on these view models would ensure that I have 
+                complete code coverage and that my functions are doing what they are supposed to be.<br><br>
+
+                The last part of my enhancements for this week would be refactoring the code for the 
+                code behind files tied to the XAML UI files within the project. I wanted to implement 
+                the Model View View Model architectural pattern to create a separation of concerns. 
+                The MVVM architectural pattern would make it easier to split the project into smaller 
+                pieces and make collaboration easier amongst team members. As you can see in row four 
+                of the photos to the left, the logic is entirely removed from the code-behind files 
+                and placed within its own view model files to achieve MVVM.
+                <br>
+            </p>
+            <div class="para">
+                <span style="font-weight:bolder">Refelction:</span><br>
+                A few key things that I learned throughout this week: 
+                <ul>
+                    <li>Setting up a test project and using the Xunit test library.</li>
+                    <li>How to set up Visual Studio with multiple projects under one solution.</li>
+                    <li>Advanced architectural patterns for separation of concerns.</li>
+                    <li>Advanced LINQ methods.</li>
+                </ul>
+                I spent many hours learning new things and implementing them within the enhancements 
+                this week. I have only read about many of the topics I mentioned in the justification 
+                section and not done in an actual project, so everything was a learning experience. 
+                The most exciting part of the enhancements for this week was learning about unit 
+                testing with Xunit. Unit testing is a crucial part of software development. Knowing 
+                how to write tests and test your code is a fundamental skill that every developer 
+                needs to have.
+            </div>
+
+
+        </div>
+    </div>    
+
+</body>
+</html>

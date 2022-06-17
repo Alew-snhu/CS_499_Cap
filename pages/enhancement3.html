@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhancement two</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/enhancement.css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet'>
+</head>
+<body>
+    <ul class="navul">
+        <li class="navli"><a href="./frontpage.html">Home</a></li>
+        <li class="navli"><a href="./psa.html">Professional Self-Assessment</a></li>
+        <li class="navli"><a href="./codereview.html">Code Review</a></li>         
+        <li class="navli"><a href="./enhancement1.html">Enhancement One</a></li>
+        <li class="navli"><a href="./enhancement2.html">Enhancement Two</a></li>        
+        <li class="navli"><a href="./enhancement3.html">Enhancement Three</a></li>
+    </ul>
+    <h1 class="header">Enhancement Three: Database</h1>
+    <div class="container">
+        <div class="leftcontent">
+            <h1><a href="https://github.com/Alew-snhu/CS_499_Cap" target="_blank">View The Completed Project Here On GitHub</a></h1>         
+            <h3>Additions To The UI With New Log In Screen</h3>
+            <div style="text-align:center">
+                <a target="_blank" href="../images/EnhancThreeUI.png">
+                    <img src="../images/EnhancThreeUI.png" alt="EnhancThreeUI">
+                </a>
+                <a target="_blank" href="../images/AMS-Nav.png">
+                    <img src="../images/AMS-Nav.png" alt="AMS-Nav">
+                </a>
+                <a target="_blank" href="../images/UserLogin.png">
+                    <img src="../images/UserLogin.png" alt="UserLogin">
+                </a>               
+            </div>
+            <h3>Additions To The UI Add Records Section</h3>
+            <div style="text-align:center">
+                <a target="_blank" href="../images/AMS3.png">
+                    <img src="../images/AMS3.png" alt="AMS3">
+                </a>
+                <a target="_blank" href="../images/AddHabitat.png">
+                    <img src="../images/AddHabitat.png" alt="AddHabitat">
+                </a>
+                <a target="_blank" href="../images/AUDrecords.png">
+                    <img src="../images/AUDrecords.png" alt="AUDrecords">
+                </a>               
+            </div>
+            <h3>Entities, DbSets, and Db Seeder</h3>
+            <div style="text-align:center">
+                <a target="_blank" href="../images/Entities.png">
+                    <img src="../images/Entities.png" alt="Entities">
+                </a>
+                <a target="_blank" href="../images/DbSets.png">
+                    <img src="../images/DbSets.png" alt="DbSets">
+                </a>
+                <a target="_blank" href="../images/AMSDBSEEDER.png">
+                    <img src="../images/AMSDBSEEDER.png" alt="AMSDBSEEDER">
+                </a>               
+            </div>           
+        </div>        
+        <div class="rightcontent">
+                        
+            <div class="para">
+                <span style="font-weight:bolder">Enhancements Completed:</span><br>
+                <ul>
+                    <li>The Completion of new screens and UI elements related to database work.</li>
+                    <li>Utilize data binding between new view models and UI components.</li>                    
+                    <li>The Completion of an Entity Framework Core Project for SQLite database functionality.</li>
+                    <li>The Creation of Entities for storing data in the database</li>
+                    <li>Additional view models were created for new screens added. </li>
+                    <li>Additional tests were created for new view models added.</li>
+                    <li>Further refactoring of the existing code to accomplish MVVM.</li>
+                </ul> 
+            </div>
+            <p class="para">
+                <span style="font-weight:bolder">Artifact Description:</span><br>              
+                In the final week of enhancements for the Animal Monitoring System, it 
+                was time to add functionality for storing data within the application. 
+                The original program did not interact with a database, so I had the 
+                opportunity to brainstorm ways the user would store and retrieve data.
+            </p>
+            <p class ="para">
+                <span style="font-weight:bolder">Justification of inclusion:</span><br>
+                In week three of enhancements, I had many tasks to complete before I could 
+                call this project finished. My primary mission was to create a database for
+                the AMS program and make it function. Another area in this project where I
+                showcase my abilities is through research. Research is essential to any 
+                developer's job, and I find it interesting to learn new things. I began 
+                my week by researching SQLite as I thought this would be an excellent 
+                decision for keeping the application lightweight. I  had previous experience 
+                with SQLite in my Android programming course  I took in my third year of 
+                college, so I was somewhat familiar with how it operated. I had also had 
+                some experience with Entity Framework before starting this course, so I 
+                thought maybe I could find a way to use both to make things much easier 
+                for myself.<br><br>
+
+                Although limited in features, I discovered Entity Framework Core supported
+                SQLite through my research. After reading about all of the necessary Nuget
+                packages I would need for an Entity Framework Core project, I was finally
+                able to create one and start building the database. You can see the Entities 
+                I created in the third row of photos to the left. The entities are C# classes 
+                telling the database what kind of data will be stored in the table. I made a 
+                class for the Animals, Habitats, and User Credentials, which all needed tables 
+                in the database to store data. Next to the entities, you can see the DbSets, 
+                which I would use to query for the data stored in the tables. Lastly, you can 
+                see a code file of the DBseeder created to populate the database with the 
+                animals already in the text file. The DBseeder was only made for the initial 
+                setup of default values inside the database.<br><br>
+                
+                Aside from adding database functionality, I would also have to complete the 
+                UI design for the database portion of the app. nine new screens were added 
+                in this enhancement along with the code to make them all function. The 
+                functionality of these screens would include adding, updating, and deleting 
+                animal and habitat records in the database. I primarily used LINQ to query 
+                for the information necessary to accomplish all of the functionality.<br><br>
+
+                With the addition of new screens came the addition of new view models to house 
+                the code for these screens. I added two new view models and ran many more tests 
+                to ensure the code was doing what it was designed to do. Many application areas 
+                needed refactoring after this, which would eventually take me to the end of the 
+                week to complete.<br>
+
+            </p>
+            <div class="para">
+                <span style="font-weight:bolder">Refelction:</span><br>
+                Week three was by far the busiest week I had regarding enhancements for this 
+                project. I conducted a lot of research to complete most of this work because I 
+                was unfamiliar with how exactly I would meet most of these tasks. I had a few 
+                problems that took me a while to solve, but the most frustrating part was trying 
+                to implement the data binding with the UI elements for this portion of the project. 
+                I spent hours trying to figure out the correct way to use my view model properties 
+                with the UI elements that used data from the database. After a few days of trial 
+                and error, I finally reached out to a friend to help me solve the problem.<br><br>
+
+                From creating the first UI element to creating the database, I have learned an 
+                incredible amount about building full-stack applications. The knowledge throughout 
+                this enhancement can be used and applied in a professional environment and to 
+                my personal projects. I feel confident in saying I know much more than I did 
+                three weeks ago when I started this project.<br>
+
+            </div>
+
+
+        </div>
+    </div>    
+
+</body>
+</html>
