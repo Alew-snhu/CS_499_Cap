@@ -90,6 +90,9 @@ h3{
     padding-left: 200px;
     grid-area: lmain;
   }
+
+/* css grid container */
+
   .container{                       
     display: grid;
     margin:0;
