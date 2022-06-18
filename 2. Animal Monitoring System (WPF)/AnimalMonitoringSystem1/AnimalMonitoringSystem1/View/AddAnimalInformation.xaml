@@ -1,0 +1,22 @@
+﻿<Page x:Class="AnimalMonitoringSystem.View.AddAnimalInformation"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AnimalMonitoringSystem"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="900"
+      Title="AddAnimalInformation">
+
+    <Grid Height="500" Width="900">
+        <!-- ImageBrush is used for displaying the background image-->
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/Bamboo.jpg"></ImageBrush>
+        </Grid.Background>
+
+        <!-- Three buttons for user navigation-->
+        <Button  Click= "Button_Click_AddAnimal" Style="{StaticResource VA-GoBack}" Margin="0,207,0,250">Add New Animal</Button>
+        <Button Click="Button_Click_AddHabitat" Style="{StaticResource VA-ViewFromTextFile}" Margin="0,275,0,180">Add New Habitat</Button>
+        <Button Click="Button_Click_GoBack"  Style="{StaticResource VA-ViewFromDb}" Margin="0,350,0,107">Go Back</Button>
+    </Grid>
+</Page>

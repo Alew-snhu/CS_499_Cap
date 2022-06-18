@@ -1,0 +1,9 @@
+﻿<Application x:Class="AnimalMonitoringSystem.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:AnimalMonitoringSystem"
+             StartupUri="View/MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary Source="/styles/PageElementStyles.xaml"></ResourceDictionary>
+    </Application.Resources>
+</Application>

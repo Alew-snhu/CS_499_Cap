@@ -1,0 +1,32 @@
+﻿<Page x:Class="AnimalMonitoringSystem.View.AddAnimal"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AnimalMonitoringSystem" 
+      xmlns:viewmodel="clr-namespace:AnimalMonitoringSystem1.ViewModel" 
+      d:DataContext="{d:DesignInstance Type=viewmodel:AddUpdateDeleteAnimalViewModel}"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="900"
+      Title="AddAnimal">
+
+    <Grid Background="ForestGreen" Height="500" Width="900" HorizontalAlignment="Center">
+
+        <!-- text boxes and labels for user input -->
+        <Label Margin="220,85,600,388" >Animal Type:</Label>
+        <TextBox Margin="300,85,255,385" MaxLength="15" Height="30" Name="AnimalType" x:FieldModifier="public" Text="{Binding AnimalType, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Margin="254,130,602,340" Content="Name:"></Label>
+        <TextBox Margin="300,130,255,340" MaxLength="15" Height="30" Name="AnimalName" Text="{Binding AnimalName, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Margin="260,173,604,297" Content="Age:"/>
+        <TextBox Margin="300,173,255,297" MaxLength="15" Height="30" Name="AnimalAge" Text="{Binding AnimalAge, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Margin="199,218,599,256" Content="Health Concerns:"/>
+        <TextBox Margin="300,216,255,254" MaxLength="100" Height="30" Name="Health" Text="{Binding HealthConcerns, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Margin="189,260,600,210" Content="Feeding Schedule:"/>
+        <TextBox Margin="300,260,255,212" MaxLength="50" Name="Feed" Text="{Binding FeedingSchedule, UpdateSourceTrigger=PropertyChanged }"/>
+
+        <!--Buttons for navigation and subbmitting a new record-->
+        <Button Margin="170,376,0,70" Content="Go Back" Click="Button_Click_GoBack" HorizontalAlignment="Left" Width="180" Height="54"></Button>
+        <Button Margin="0,376,130,70" Content="Add to records" Click="Button_Click_AddToRecords" HorizontalAlignment="Right" Width="180" Height="54"></Button>
+        <Button Margin="0,376,338,70" Content="Update/Delete Animal Record" Click="Button_Click_UpdateDelete" HorizontalAlignment="Right" Width="180" Height="54"></Button>
+    </Grid>
+</Page>

@@ -1,0 +1,23 @@
+﻿<Page x:Class="AnimalMonitoringSystem.View.MainMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AnimalMonitoringSystem"
+      mc:Ignorable="d" 
+      WindowHeight="500" WindowWidth="900"
+      Title="MainMenu">
+
+    <Grid Height="500" Width="900">
+        <!-- ImageBrush used to provide background image -->
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/WelcomeToTheAMS.jpg"></ImageBrush>
+        </Grid.Background>
+        
+        <!-- Buttons for user navigation -->
+        <Button Margin="10,10,805,470" Click="Button_Click">Logout</Button>
+        <Button Click="Button_Click_Open_ViewAnimals" Style="{StaticResource MM-ViewAnimals}" >View Animals</Button>
+        <Button Click="Button_Click_Open_ViewHabitats" Style="{StaticResource MM-ViewHabitats}" >View Habitats</Button>
+        <Button Click="Button_Click_AddInfo" Style="{StaticResource MM-AddAnimal}">Add Animal Information</Button>
+    </Grid>
+</Page>

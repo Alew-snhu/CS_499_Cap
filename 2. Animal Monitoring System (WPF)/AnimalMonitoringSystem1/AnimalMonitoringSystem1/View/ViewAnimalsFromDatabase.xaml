@@ -1,0 +1,42 @@
+﻿<Page x:Class="AnimalMonitoringSystem.View.ViewAnimalsFromDatabase"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AnimalMonitoringSystem"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="900"
+      Title="ViewAnimalsFromDatabase">
+
+    <Grid Height="500" Width="900">
+        
+        <!-- ImageBrush is used to provide the background image -->
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/Tiger.jpg"></ImageBrush>
+        </Grid.Background>
+        
+        <!-- The TextBox will display the animal information once a selection is made in the combo box -->
+        <TextBox             
+            Name="AnimalInfoDisplayFromDb"
+            Style="{StaticResource VaInfoDisplay}">
+        </TextBox>
+        
+        <!-- TextBlock used for combo box header -->
+        <TextBlock  
+            Style="{StaticResource VaTextHeader}">
+            Search the database and choose an animal from the drop down
+        </TextBlock>
+        
+        <!-- Combobox that will provide animal types for the user to choose from -->
+        <ComboBox             
+            Name="AnimalFromDatabaseList" 
+            SelectionChanged="AnimalFromDatabaseList_SelectionChanged"
+            Style="{StaticResource VaCombo}">
+        </ComboBox>
+        
+        <!-- Buttons for user navigation and searching the database -->
+        <Button Click="Button_Click_Search_Database" Style="{StaticResource VaSearchDb}">Search Database For Animals</Button>
+        <Button Click="Button_Click_Go_Back" Style="{StaticResource VaGoBack}">Go Back</Button>
+        
+    </Grid>
+</Page>

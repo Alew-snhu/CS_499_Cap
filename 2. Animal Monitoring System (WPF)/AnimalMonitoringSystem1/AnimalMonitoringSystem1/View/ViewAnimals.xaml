@@ -1,0 +1,26 @@
+﻿<Page x:Class="AnimalMonitoringSystem.View.ViewAnimals"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AnimalMonitoringSystem"
+      mc:Ignorable="d"           
+      Title="ViewAnimals" WindowHeight="500" WindowWidth="900">
+    <Grid Height="500" Width="900">
+        
+        <!-- ImageBrush is used to provide the background image -->
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/Penguins.jpg"></ImageBrush>
+        </Grid.Background>
+
+        <!-- TextBlock for the Page Title -->
+        <TextBlock
+            Style="{StaticResource VaBanner}"
+            >View Animal Information</TextBlock>
+
+        <!-- Buttons for navigation -->
+        <Button Click= "Button_Click_Main_Menu" Style="{StaticResource VA-ViewFromTextFile}">Go Back</Button>
+        <Button Click="Button_Click_ViewFromTextFile" Style="{StaticResource VA-ViewFromDb}">View From Text File</Button>
+        <Button Click="Button_Click_ViewFromDatabase" Style="{StaticResource VA-GoBack}">View From Database</Button>
+    </Grid>
+</Page>

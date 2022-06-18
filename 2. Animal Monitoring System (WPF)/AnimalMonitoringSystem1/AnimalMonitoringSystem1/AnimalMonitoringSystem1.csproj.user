@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="View\CreateAnAccount.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UpdateOrDeleteAnimal.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UpdateOrDeleteHabitat.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UserLogin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\AddAnimal.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddAnimalInformation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddHabitat.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="App.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CreateAnAccount.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MainMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\PageElementStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UpdateOrDeleteAnimal.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UpdateOrDeleteHabitat.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UserLogin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ViewAnimals.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ViewAnimalsFromDatabase.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ViewAnimalsFromTextFile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ViewHabitatFromDataBase.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ViewHabitatFromTextFile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ViewHabitats.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

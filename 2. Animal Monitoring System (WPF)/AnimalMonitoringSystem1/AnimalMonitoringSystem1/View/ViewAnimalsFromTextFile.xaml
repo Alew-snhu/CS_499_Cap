@@ -1,0 +1,38 @@
+﻿<Page x:Class="AnimalMonitoringSystem.View.ViewAnimalsFromTextFile"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d"
+      Title="ViewAnimalsFromTextFile" Height="500" Width="900">
+
+    <Grid>
+        <!-- ImageBrush provides the background image for the page -->
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/giraffe.jpg"></ImageBrush>
+        </Grid.Background>
+
+        <!-- TextBox to display the animal info from the user selection in the combobox -->
+        <TextBox 
+            Name="AnimalInfoDisplay" 
+            Style="{StaticResource VaInfoDisplay}">
+        </TextBox>
+
+        <!-- TextBlock for combobox header -->
+        <TextBlock 
+            Style="{StaticResource VaTextHeader}">            
+            Open The Animals.txt File And Choose An Animal from the Drop Down
+        </TextBlock>
+
+        <!-- ComboBox used to display the animals read from the text file -->
+        <ComboBox 
+            Name="AnimalsList"                                                 
+            SelectionChanged="ComboBox_SelectionChanged"
+            Style="{StaticResource VaCombo}">
+        </ComboBox>
+
+        <!-- Buttons for Navigation and choosing a file to read -->
+        <Button Click="Button_Click_Open_File" Style="{StaticResource VaOpenFile}">Open File</Button>
+        <Button Click="Button_Click_Go_Back"  Style="{StaticResource VaGoBack}">Go Back</Button>
+    </Grid>
+</Page>
